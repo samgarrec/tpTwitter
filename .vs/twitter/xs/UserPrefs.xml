@@ -1,13 +1,18 @@
 ﻿<Properties StartupConfiguration="{6502BB39-95CF-4021-AD0D-F4DD262EE18C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="twitter/AssemblyInfo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="twitter.Android/Properties/AndroidManifest.xml">
     <Files>
       <File FileName="twitter/MainPage.xaml" Line="5" Column="14" />
-      <File FileName="twitter/MainPage.xaml.cs" Line="9" Column="18" />
-      <File FileName="twitter/Models/Tweet.cs" />
-      <File FileName="twitter/Services/ITwitterService.cs" />
-      <File FileName="twitter/App.xaml" />
+      <File FileName="twitter/MainPage.xaml.cs" Line="14" Column="48" />
+      <File FileName="twitter/Models/Tweet.cs" Line="5" Column="6" />
+      <File FileName="twitter/Services/ITwitterService.cs" Line="13" Column="1" />
+      <File FileName="twitter/App.xaml" Line="8" Column="15" />
       <File FileName="twitter/twitter.csproj" Line="1" Column="1" />
       <File FileName="twitter/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="../../.nuget/packages/xamarin.essentials/1.5.3.2/readme.txt" Line="1" Column="1" />
+      <File FileName="../../.nuget/packages/xamarin.essentials/1.3.1/readme.txt" Line="1" Column="1" />
+      <File FileName="twitter/Services/TwitterService.cs" Line="27" Column="33" />
+      <File FileName="twitter.Android/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="twitter.Android/Properties/AndroidManifest.xml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,9 +25,14 @@
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
-              <Node name="AssemblyInfo.cs" selected="True" />
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
             <Node name="twitter.Android" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Packages" expanded="True" />
+              <Node name="Properties" expanded="True">
+                <Node name="AndroidManifest.xml" selected="True" />
+              </Node>
               <Node name="Resources" expanded="True">
                 <Node name="drawable" expanded="True" />
               </Node>

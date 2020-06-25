@@ -2,7 +2,6 @@
 /Users/samgarrec/Projects/twitter/twitter/bin/Debug/netstandard2.0/twitter.dll
 /Users/samgarrec/Projects/twitter/twitter/bin/Debug/netstandard2.0/ref/twitter.dll
 /Users/samgarrec/Projects/twitter/twitter/bin/Debug/netstandard2.0/twitter.pdb
-/Users/samgarrec/Projects/twitter/twitter/obj/Debug/netstandard2.0/twitter.csprojAssemblyReference.cache
 /Users/samgarrec/Projects/twitter/twitter/obj/Debug/netstandard2.0/App.xaml.g.cs
 /Users/samgarrec/Projects/twitter/twitter/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
 /Users/samgarrec/Projects/twitter/twitter/obj/Debug/netstandard2.0/twitter.AssemblyInfoInputs.cache

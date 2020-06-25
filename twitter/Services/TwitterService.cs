@@ -49,11 +49,11 @@ namespace twitter.Services
 
 
             Tweet tweet2 = new Tweet();
-            tweet1.identifiant = "Clement";
-            tweet1.nom = "Bricola";
-            tweet1.dateCreation = "12-10-2019";
-            tweet1.texte = "Non mais franchement comment on gere les dates en java?";
-            tweet1.pseudo = "clem";
+            tweet2.identifiant = "Clement";
+            tweet2.nom = "Bricola";
+            tweet2.dateCreation = "12-10-2019";
+            tweet2.texte = "Non mais franchement comment on gere les dates en java?";
+            tweet2.pseudo = "clem";
 
 
 
@@ -62,9 +62,6 @@ namespace twitter.Services
             return tweetList;
         }
 
-        List<Tweet> ITwitterService.GetTweet()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using twitter.Services;
+using Xamarin.Essentials;
+
 namespace twitter
 {
     // Learn more about making custom code visible in the Xamarin.Forms previewer
@@ -16,9 +18,11 @@ namespace twitter
         public MainPage()
         {
             InitializeComponent();
+
+
         }
 
-       
+
 
         private void Disconnection_Clicked(Object sender, EventArgs a)
         {
@@ -39,67 +43,82 @@ namespace twitter
 
         private void Connection_Clicked(Object sender, EventArgs a)
         {
-            var id = this.id.Text;
-            var pwd = this.pwd.Text;
-            var estswitch = this.monSwitch.IsToggled;
-            var validPwd = true;
-            var validId = true;
 
 
 
-            if (this.id.Text == null || this.id.Text.Length < 3)
+            var current = Connectivity.NetworkAccess;
+
+            if (current == NetworkAccess.Internet)
             {
+                // Connection to internet is available
 
-                this.id.Placeholder = "Veuillez saisir un id valide";
-                this.id.Text = "";
-                this.id.PlaceholderColor = Color.Red;
-                Console.WriteLine("test");
-                validId = false;
-
-
-
-            }
-            if (this.pwd.Text == null || this.pwd.Text.Length < 6)
-            {
-
-                this.pwd.Placeholder = "Veuillez saisir un password valide (au moins 6 caracteres)";
-                this.pwd.Text = "";
-                this.pwd.PlaceholderColor = Color.Red;
-                validPwd = false;
-                Console.WriteLine("test");
+                var id = this.id.Text;
+                var pwd = this.pwd.Text;
+                var estswitch = this.monSwitch.IsToggled;
+                var validPwd = true;
+                var validId = true;
 
 
 
-            }
-            if (validPwd && validId)
-            {
-                TwitterService ts = new TwitterService();
-                Boolean resultat = ts.Authentificate(this.id.Text, this.pwd.Text);
-                if (resultat)
+                if (this.id.Text == null || this.id.Text.Length < 3)
                 {
-                    DisplayAlert("get", "Vos informations seront mémorisées pour la prochaine fois !", "ok");
 
-                    if (estswitch)
-                    {
-                        DisplayAlert("information", "Vos informations seront mémorisées pour la prochaine fois !", "ok");
+                    this.id.Placeholder = "Veuillez saisir un id valide";
+                    this.id.Text = "";
+                    this.id.PlaceholderColor = Color.Red;
+                    Console.WriteLine("test");
+                    validId = false;
 
 
-
-                    }
-                    this.tweet.IsVisible = true;
-
-                    this.formulaire.IsVisible = false;
-
-                    this.deconnexion.IsVisible = true;
-                    this.connect.IsVisible = false;
 
                 }
-            }
+                if (this.pwd.Text == null || this.pwd.Text.Length < 6)
+                {
 
+                    this.pwd.Placeholder = "Veuillez saisir un password valide (au moins 6 caracteres)";
+                    this.pwd.Text = "";
+                    this.pwd.PlaceholderColor = Color.Red;
+                    validPwd = false;
+                    Console.WriteLine("test");
+
+
+
+                }
+                if (validPwd && validId)
+                {
+                    TwitterService ts = new TwitterService();
+                    Boolean resultat = ts.Authentificate(this.id.Text, this.pwd.Text);
+                    if (resultat)
+                    {
+                        DisplayAlert("get", "Vos informations seront mémorisées pour la prochaine fois !", "ok");
+
+                        if (estswitch)
+                        {
+                            DisplayAlert("information", "Vos informations seront mémorisées pour la prochaine fois !", "ok");
+
+
+
+                        }
+                        this.tweet.IsVisible = true;
+
+                        this.formulaire.IsVisible = false;
+
+                        this.deconnexion.IsVisible = true;
+                        this.connect.IsVisible = false;
+
+                    }
+                }
+
+
+
+            }
+            else
+            {
+                this.id.Text = "Aucune connection";
+
+            }
 
 
         }
-
-
     }
 }

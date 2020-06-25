@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "BQR1Ljr+W849Qo+IslAq557oq8CLEnRgyLfFXFfx5iOUqbZ0A3Zf66FBQzREo+2IFDUuWZQv/1qJaI8xXVT4tg==",
+  "success": true,
+  "projectFilePath": "/Users/samgarrec/Projects/twitter/twitter/twitter.csproj",
+  "expectedPackageFiles": [
+    "/Users/samgarrec/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/samgarrec/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/samgarrec/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/samgarrec/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/samgarrec/.nuget/packages/xamarin.forms/4.7.0.968/xamarin.forms.4.7.0.968.nupkg.sha512"
+  ],
+  "logs": []
+}

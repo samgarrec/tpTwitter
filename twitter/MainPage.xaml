@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" x:Class="twitter.MainPage">
+    <StackLayout>
+        <!-- Place new controls here -->
+
+
+             
+
+
+         <StackLayout>
+        <ContentView BackgroundColor="#58B0F0">
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="Start" Margin="10,25">
+                <ImageButton Source="pencil.png"   BackgroundColor="#58B0F0" Aspect="AspectFill" HeightRequest="25" />
+                <Label  FontSize="20" FontAttributes="Bold" Text="Accueil"  VerticalTextAlignment="Center"  HorizontalOptions="CenterAndExpand" TextColor="white" />
+                <ImageButton Source="search.png" BackgroundColor="#58B0F0" Aspect="AspectFill"  HeightRequest="25"  />
+            </StackLayout>
+
+        </ContentView>
+
+        <StackLayout x:Name="formulaire" IsVisible="true">
+            <Label Text="Connection à Twitter" HorizontalTextAlignment="center" TextColor="gray"></Label>
+            <Entry  x:Name="id" Placeholder="Identifiant twitter" PlaceholderColor="gray"></Entry>
+            <Entry  x:Name="pwd" Placeholder="Mot de passe"  IsPassword="True" PlaceholderColor="gray"></Entry>
+
+            <StackLayout Orientation="Horizontal">
+                <Switch x:Name="monSwitch"></Switch>
+
+
+                <Label Text="se souvenir de moi ?"></Label>
+            </StackLayout>
+
+        </StackLayout>
+        <StackLayout HorizontalOptions="FillAndExpand">
+
+            <Button  HorizontalOptions="Fill" x:Name="connect" IsVisible="true" Text="connect" Clicked="Connection_Clicked"></Button>
+
+
+
+
+
+        </StackLayout>
+
+                <StackLayout HorizontalOptions="FillAndExpand">
+
+            <Button  HorizontalOptions="Fill" x:Name="deconnexion" IsVisible="false" Text="disconnect" Clicked="Disconnection_Clicked"></Button>
+
+
+
+
+
+        </StackLayout>
+
+
+
+
+        <ScrollView VerticalOptions="FillAndExpand">
+
+
+
+
+            <StackLayout Orientation="Vertical" IsVisible="false" x:Name="tweet" >
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10,10">
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+
+                        <Image Source="https://picsum.photos/50/50/?random"  WidthRequest="50" HeightRequest="50" Aspect="AspectFill"></Image>
+
+                    </StackLayout>
+
+
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <Label Text="Cedric"    HorizontalOptions="Start"   Margin="0,-1"  />
+
+                        <Label Text="millauriaux@mas.com"  HorizontalOptions="Center" Margin="0,-22" />
+
+                        <Label Text="50s"  HorizontalOptions="End"  />
+
+                        <Label Text="Lorem Ipsum et blabla on bavarde on papotte"  HorizontalOptions="Center"  />
+
+                    </StackLayout>
+
+
+
+
+
+                </StackLayout>
+                <StackLayout  HorizontalOptions="CenterAndExpand" Margin="10" Orientation="Horizontal">
+
+
+
+                </StackLayout>
+
+
+                <StackLayout Orientation="Horizontal" Margin="0,10">
+                    <ImageButton Source="reply.png"    Margin="0,10" Aspect="AspectFit" HeightRequest="30" BackgroundColor="White" HorizontalOptions="FillAndExpand"></ImageButton>
+                    <ImageButton Source="retweet.png"    Margin="0,10" Aspect="AspectFit" HeightRequest="30" BackgroundColor="White" HorizontalOptions="FillAndExpand" ></ImageButton>
+                    <ImageButton Source="favorite.png"    Margin="0,10"  Aspect="AspectFit" HeightRequest="30"  BackgroundColor="White" HorizontalOptions="FillAndExpand"></ImageButton>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="LightGray"></StackLayout>
+
+
+            </StackLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        </ScrollView>
+
+
+        <StackLayout Orientation="Horizontal"    HeightRequest="75">
+
+            <Button Text="Fil" HorizontalOptions="FillAndExpand"  TextColor="white" ></Button>
+            <Button Text="Notifications"  HorizontalOptions="FillAndExpand"    TextColor="white"></Button>
+            <Button Text="Message"  HorizontalOptions="FillAndExpand" TextColor="white"  ></Button>
+            <Button Text="Moi" HorizontalOptions="FillAndExpand"  TextColor="white"></Button>
+
+
+
+
+        </StackLayout>
+
+
+    </StackLayout>
+
+
+    </StackLayout>
+
+
+
+
+
+
+
+
+
+</ContentPage>

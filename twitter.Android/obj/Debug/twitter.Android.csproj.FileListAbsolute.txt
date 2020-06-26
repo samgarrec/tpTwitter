@@ -478,3 +478,4 @@
 /Users/samgarrec/Projects/twitter/twitter.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/samgarrec/Projects/twitter/twitter.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/samgarrec/Projects/twitter/twitter.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/samgarrec/Projects/twitter/twitter.Android/obj/Debug/twitter.Android.csprojAssemblyReference.cache

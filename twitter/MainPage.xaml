@@ -57,14 +57,14 @@
 
              </StackLayout>
 
-        <StackLayout VerticalOptions="CenterAndExpand">
+        <StackLayout VerticalOptions="StartAndExpand">
 
         <ScrollView >
 
 
 
 
-            <StackLayout Orientation="Vertical" IsVisible="false" x:Name="tweet" >
+            <StackLayout Orientation="Vertical" IsVisible="false" VerticalOptions="StartAndExpand" x:Name="tweet" >
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10,10">
 

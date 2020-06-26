@@ -1,18 +1,15 @@
 ﻿<Properties StartupConfiguration="{6502BB39-95CF-4021-AD0D-F4DD262EE18C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="twitter.Android/Properties/AndroidManifest.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="twitter/Services/TwitterService.cs">
     <Files>
-      <File FileName="twitter/MainPage.xaml" Line="5" Column="14" />
-      <File FileName="twitter/MainPage.xaml.cs" Line="14" Column="48" />
-      <File FileName="twitter/Models/Tweet.cs" Line="5" Column="6" />
-      <File FileName="twitter/Services/ITwitterService.cs" Line="13" Column="1" />
-      <File FileName="twitter/App.xaml" Line="8" Column="15" />
-      <File FileName="twitter/twitter.csproj" Line="1" Column="1" />
-      <File FileName="twitter/AssemblyInfo.cs" Line="1" Column="1" />
-      <File FileName="../../.nuget/packages/xamarin.essentials/1.5.3.2/readme.txt" Line="1" Column="1" />
-      <File FileName="../../.nuget/packages/xamarin.essentials/1.3.1/readme.txt" Line="1" Column="1" />
-      <File FileName="twitter/Services/TwitterService.cs" Line="27" Column="33" />
-      <File FileName="twitter.Android/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="twitter.Android/Properties/AndroidManifest.xml" />
+      <File FileName="twitter/Services/TwitterService.cs" Line="22" Column="32" />
+      <File FileName="twitter/footer.xaml" Line="1" Column="1" />
+      <File FileName="twitter/Services/ITwitterService.cs" Line="9" Column="37" />
+      <File FileName="twitter/ListeTweet.xaml" Line="24" Column="1" />
+      <File FileName="twitter/ListeTweet.xaml.cs" Line="20" Column="35" />
+      <File FileName="twitter/LoginPage.cs" Line="55" Column="1" />
+      <File FileName="twitter/Models/Tweet.cs" Line="5" Column="23" />
+      <File FileName="twitter/Models/User.cs" Line="12" Column="17" />
+      <File FileName="twitter/LoginPage.xaml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,31 +17,19 @@
           <Option id="ShowAllFiles" value="True" />
           <Node name="twitter" expanded="True">
             <Node name="twitter" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
               <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" />
-            </Node>
-            <Node name="twitter.Android" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="Packages" expanded="True" />
-              <Node name="Properties" expanded="True">
-                <Node name="AndroidManifest.xml" selected="True" />
+              <Node name="Services" expanded="True">
+                <Node name="TwitterService.cs" selected="True" />
               </Node>
-              <Node name="Resources" expanded="True">
-                <Node name="drawable" expanded="True" />
-              </Node>
+              <Node name="ListeTweet.xaml" expanded="True" />
             </Node>
+            <Node name="twitter.Android" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="../../../twitter/Services/TwitterService.cs" line="24" column="51" endLine="24" endColumn="64" offsetX="-1" offsetY="-1" expression="p.identifiant" liveUpdate="False" />
-  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.twitter.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

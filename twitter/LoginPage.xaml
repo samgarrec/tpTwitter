@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage    xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="twitter.LoginPage" xmlns:comn="clr-namespace:twitter;assembly=twitter">
+    <ContentPage.Content>
+
+
+
+
+
+
+
+        <StackLayout VerticalOptions="FillAndExpand">
+            <!-- Place new controls here -->
+
+
+            <comn:header></comn:header>
+
+            <StackLayout x:Name="formulaire" IsVisible="true" VerticalOptions="FillAndExpand">
+                <Label Text="Connection à Twitter" HorizontalTextAlignment="center" TextColor="gray"></Label>
+                <Entry  x:Name="id" Placeholder="Identifiant twitter" PlaceholderColor="gray"></Entry>
+                <Entry  x:Name="pwd" Placeholder="Mot de passe"  IsPassword="True" PlaceholderColor="gray"></Entry>
+
+                <StackLayout Orientation="Horizontal">
+                    <Switch x:Name="monSwitch"></Switch>
+
+
+                    <Label Text="se souvenir de moi ?"></Label>
+                </StackLayout>
+
+             </StackLayout>
+
+            <StackLayout HorizontalOptions="FillAndExpand">
+
+                <Button  HorizontalOptions="Fill" x:Name="connect" IsVisible="true" Text="connect" Clicked="Connection_Clicked"></Button>
+
+
+
+
+
+            </StackLayout>
+
+
+            <comn:footer></comn:footer>
+
+        </StackLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </ContentPage.Content>
+</ContentPage>

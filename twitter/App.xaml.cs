@@ -10,8 +10,7 @@ namespace twitter
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
-        }
+            MainPage = new NavigationPage(new LoginPage());        }
 
         protected override void OnStart()
         {

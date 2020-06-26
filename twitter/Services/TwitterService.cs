@@ -14,16 +14,15 @@ namespace twitter.Services
 
       
 
-        public bool Authentificate(string user, string pwd)
+        public bool Authentificate(User utilisateur)
         {
 
             Boolean resultat;
             List<Tweet> laListe = GetTweet();
+            List<User> users = GetUsers();
 
-            Boolean resultatRequete = laListe.Any(p => p.identifiant.Equals(user));
 
-
-            Console.WriteLine(resultatRequete);
+            Boolean resultatRequete = users.Any(p =>p.identifiant.Equals(utilisateur.identifiant.ToString()));
             if (resultatRequete)
             {
 
@@ -36,24 +35,53 @@ namespace twitter.Services
             return resultat;
         }
 
-        public List<Tweet> GetTweet()
+        public List<User> GetUsers()
         {
+            User sam = new User();
+            sam.identifiant = "samuel";
+            sam.pwd = "samuel";
+
+
+
+            User clem = new User();
+           clem.identifiant = "clement";
+            clem.pwd = "clement";
+
+
+            List<User> users = new List<User>();
+            users.Add(sam);
+            users.Add(clem);
+            return users;
+
+
+        }
+
+            public List<Tweet> GetTweet()
+        {
+
+           
+            User sam = new User();
+            sam.identifiant = "samuel";
+            sam.pwd = "samuel";
+
+            
+
+            User clem = new User();
+            sam.identifiant = "clement";
+            sam.pwd = "clement";
+
             List<Tweet> tweetList = new List<Tweet>();
 
             Tweet tweet1 = new Tweet();
-            tweet1.identifiant = "samuel";
-            tweet1.nom = "Garrec";
             tweet1.dateCreation = "12-12-2020";
             tweet1.texte = "Non mais franchement qui à inventé le cahier à spirale?";
-            tweet1.pseudo = "samsam";
+            tweet1.nom ="sam";
 
 
             Tweet tweet2 = new Tweet();
-            tweet2.identifiant = "Clement";
-            tweet2.nom = "Bricola";
             tweet2.dateCreation = "12-10-2019";
             tweet2.texte = "Non mais franchement comment on gere les dates en java?";
-            tweet2.pseudo = "clem";
+            tweet2.nom = "john";
 
 
 
